@@ -17,7 +17,7 @@
     "swr": "^0.5.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "postcss": "^8.2.13",
     "tailwindcss": "^2.1.2"
   }
