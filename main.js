@@ -59,7 +59,7 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 // set the scene background
-const bgGradient = new THREE.TextureLoader().load("./assets/gradient.png");
+const bgGradient = new THREE.TextureLoader().load("/gradient.png");
 scene.background = bgGradient;
 
 // texture mapping cmd-tech logo onto a plane
@@ -77,7 +77,7 @@ scene.add(logo);
 
 // texture map a web globe thing onto a spheere
 
-const globeTexture = new THREE.TextureLoader().load("./assets/earth.jpg");
+const globeTexture = new THREE.TextureLoader().load("/earth.jpg");
 
 const globe = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
