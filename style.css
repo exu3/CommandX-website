@@ -11,6 +11,14 @@ main {
   z-index: 50;
   padding: 3rem;
   font-family: "Montserrat", sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+section {
+  grid-column: 1 / 12;
+  padding-top: 2rem;
 }
 
 .main-title {
@@ -33,12 +41,32 @@ main {
   font-size: 1em;
 }
 
+/* schedule component */
+
+.schedule-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.schedule-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 /* scren sizes less than 600px */
 @media only screen and (max-width: 600px) {
   main {
     padding: 1rem;
+    grid-template-columns: repeat(6, 1fr);
   }
   .main-title {
     font-size: 3rem;
+  }
+  .schedule-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
