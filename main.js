@@ -77,7 +77,7 @@ scene.add(logo);
 
 // texture map a web globe thing onto a spheere
 
-const globeTexture = new THREE.TextureLoader().load("/earth.jpg");
+const globeTexture = new THREE.TextureLoader().load("/globe.jpg");
 
 const globe = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -89,8 +89,8 @@ const globe = new THREE.Mesh(
 scene.add(globe);
 
 globe.position.z = 5;
-globe.position.setX(-10);
-globe.position.setY(-5);
+globe.position.setX(-5);
+globe.position.setY(-3);
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;

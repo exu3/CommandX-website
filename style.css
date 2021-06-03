@@ -21,6 +21,13 @@ section {
   padding-top: 2rem;
 }
 
+.header-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
 .main-title {
   font-size: 5em;
   margin-bottom: -20px;
@@ -30,23 +37,76 @@ section {
   font-size: 1.5em;
 }
 
-.register-btn {
-  border-radius: 30px;
-  padding: 5px 16px;
+.register-btn2 {
+  border-radius: 20px;
+  padding: 16px 48px;
   border: none;
   background-color: #6140f3;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
+}
+
+.register-btn {
+  border-radius: 20px;
+  padding: 16px 48px;
+  border: none;
+  background-color: #6140f3;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.register-btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.register-btn:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.register-btn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.register-btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.image-overlay {
+  position: absolute;
+  right: 0;
+  top: 8rem;
+  z-index: 30;
 }
 
 /* schedule component */
 
-.schedule-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
+.glass-box {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding-left: 30px;
+  padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -57,6 +117,21 @@ section {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.footer-text {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: dotted;
+}
+
+.footer-link:hover {
+  color: #808080;
+  text-decoration: wavy;
+}
 /* scren sizes less than 600px */
 @media only screen and (max-width: 600px) {
   main {
@@ -68,5 +143,8 @@ section {
   }
   .schedule-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .image-overlay {
+    display: none;
   }
 }
