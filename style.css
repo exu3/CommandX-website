@@ -21,6 +21,43 @@ section {
   padding-top: 2rem;
 }
 
+/* arrows */
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.arrow-down {
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/**/
+
 .header-section {
   height: 100vh;
   display: flex;
@@ -115,6 +152,23 @@ section {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-cta {
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #b99aff;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-cta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
 }
 
 .footer-text {
