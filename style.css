@@ -84,48 +84,20 @@ section {
   font-weight: 500;
   font-size: 1.2em;
 }
-
 .register-btn {
-  border-radius: 20px;
-  padding: 16px 48px;
-  border: none;
-  background-color: #6140f3;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 1.2em;
-  padding: 16px;
-  width: 220px;
-  transition: all 0.5s;
   cursor: pointer;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-.register-btn {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.register-btn:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.register-btn:hover {
-  padding-right: 24px;
-  padding-left: 8px;
-}
-
-.register-btn:hover:after {
-  opacity: 1;
-  right: 10px;
-}
 .image-overlay {
   position: absolute;
   right: 0;
@@ -160,7 +132,7 @@ section {
   padding-right: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color: #b99aff;
+  background-color: #ffffff;
   border: none;
   transition: all 0.2s ease-in-out;
 }
@@ -168,7 +140,7 @@ section {
 .card-cta:hover {
   transform: scale(1.1);
   cursor: pointer;
-  box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 2px 2px 2px 0px rgba(83, 83, 83, 0.37);
 }
 
 .footer-text {
